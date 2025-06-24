@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.menu-lateral {
+    background-color: #1a1a1a;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.menu-lateral img {
+    width: 150px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.menu-lateral a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.menu-lateral a:hover {
+    background-color: #e63946;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.conteudo-principal {
+    flex-grow: 1;
+    padding: 30px;
+    max-width: calc(100% - 240px);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #e63946;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.categorias {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.categorias a {
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.categorias a:hover {
+    color: #fff;
+}
+
+.grid-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-filmes a {
+    color: #e63946;
+    text-decoration: none;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.grid-filmes a:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.grid-filmes a img {
+    width: 100%;
+    height: 270px; /* ← Tamanho padronizado dos pôsteres */
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #333;
+    background-color: #111;
+    transition: border-color 0.3s ease;
+}
+
+.grid-filmes a:hover img {
+    border-color: #e63946;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #e63946;
+    font-size: 0.9em;
+}

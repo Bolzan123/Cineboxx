@@ -1,0 +1,101 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    width: 320px;
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #e63946;
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #333333;
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #e63946;
+    background-color: #181818;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e63946;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a4161a;
+    transform: scale(1.02);
+}
+
+.links {
+    margin-top: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.links a {
+    color: #e63946;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
